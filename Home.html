@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025101145</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="PersonalStyle.css">
+</head>
+<body>
+    <header>
+        <nav class="navigationBar">
+            <a href="Home.html" class="navigationItems">Home</a>
+            <a href="About.html" class="navigationItems">About</a>
+            <a href="Projects.html" class="navigationItems">Projects</a>
+            <a href="Contact.html" class="navigationItems">Contact</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙 Dark</button>
+        </nav>
+    </header>
+
+    <div class="heroImage">
+        <img src="homeImages/ProfilePhoto.jpeg" alt="Vinay's photo" class="myPicture">
+    </div>
+
+    <div class="heroSection">
+        <h1 id="initialText">Hi, I'm Vinay.</h1>
+
+        <div class="typed-wrapper" aria-live="polite">
+            <span id="typedTarget"></span>
+            <span class="typed-cursor" aria-hidden="true"></span>
+        </div>
+
+        <p class="myOverview">Undergraduate at IIIT Hyderabad.&nbsp; Aspiring Software Developer.</p>
+        <p class="myOverview">I enjoy building software, exploring new technologies,<br>
+            and solving challenging problems!</p>
+    </div>
+
+    <div class="projectsUndertaken">
+        <div class="myProject">
+            <span class="projectNumbering">01</span>
+            <p class="projectTitle">About Me</p>
+            <img src="homeImages/AboutVinay.jpeg"
+                alt="About Me" class="projectImage">
+            <a href="About.html" class="projectLink">Click to learn more</a>
+        </div>
+        <div class="myProject">
+            <span class="projectNumbering">02</span>
+            <p class="projectTitle">My Projects</p>
+            <img src="homeImages/ProjectbyVinay.jpeg"
+                alt="My Projects" class="projectImage">
+            <a href="Projects.html" class="projectLink">Click to learn more</a>
+        </div>
+        <div class="myProject">
+            <span class="projectNumbering">03</span>
+            <p class="projectTitle">Contact Me</p>
+            <img src="homeImages/ContactVinay.jpeg"
+                alt="Contact Me" class="projectImage">
+            <a href="Contact.html" class="projectLink">Click to learn more</a>
+        </div>
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="typedText.js"></script>
+    <script>
+        const typedEl = document.getElementById('typedTarget');
+        if (typedEl) {
+            new TypedText(typedEl, {
+                strings: [
+                    'Aspiring Software Developer.',
+                    'C & C++ Programmer.',
+                    'Web Developer in Progress.',
+                    'Problem Solver.'
+                ],
+                typingSpeed: 65,
+                eraseSpeed: 40,
+                pauseDuration: 1800
+            });
+        }
+    </script>
+</body>
+</html>
