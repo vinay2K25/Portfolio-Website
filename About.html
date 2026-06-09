@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025101145</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="PersonalStyle.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navigationBar">
+            <a href="Home.html" class="navigationItems">Home</a>
+            <a href="About.html" class="navigationItems">About</a>
+            <a href="Projects.html" class="navigationItems">Projects</a>
+            <a href="Contact.html" class="navigationItems">Contact</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙 Dark</button>
+        </nav>
+    </header>
+
+    <div class="aboutMe">
+        <h1 id="initialText">About Me</h1>
+        <p class="aboutMeText">I am an undergraduate student at the International Institute of Information Technology, Hyderabad, with a strong passion for computer science and problem solving. My journey into programming began in 2023 when I attempted to build a 2D platformer game in Python — it did not quite work out, but something about that experience stuck with me: the idea that you could sit down, write some code, and have something real come out the other end. That feeling is what drove me to keep going. I learn best by building things, which is why my growth has been shaped less by textbooks and more by the projects I have thrown myself into — from a command-line music player to a strategy board game to a full-stack task manager. These days I find myself increasingly drawn to the user-facing side of software, to the craft of building interfaces that feel good to use. Outside of coding, I enjoy table tennis, tennis, and reading. As for where I am headed — I am still figuring that out, and I think that is perfectly fine.
+        </p>
+
+        <div class="myProgress scroll-animate">
+            <p class="aboutMeText">
+                <a class="aboutNumbering"><b>01</b><br></a>
+                <a class="aboutHeadings"><b>The Beginning</b><br></a>
+                Over the past year, I built a strong foundation in programming by learning
+                C and C++, covering core concepts from the fundamentals of programming to working with arrays, linked
+                lists, and dynamic programming.<br>
+                <img src="aboutImages/TheBeginning.jpeg"
+                    alt="Beginning" class="aboutImages">
+            </p>
+            <p class="aboutMeText">
+                <a class="aboutNumbering"><b>02</b><br></a>
+                <a class="aboutHeadings"><b>Building Deeper Foundations</b><br></a>
+                Building on that foundation this year, I explored several advanced
+                data structures, including stacks, queues, binary trees, binary search trees, heaps, and hash tables,
+                deepening my understanding of efficient algorithm design and problem solving.<br>
+                <img src="aboutImages/DeeperFoundations.jpeg" alt="Progressing" class="aboutImages">
+            </p>
+            <p class="aboutMeText">
+                <a class="aboutNumbering"><b>03</b><br></a>
+                <a class="aboutHeadings"><b>Where I Am Now</b><br></a>
+                Alongside data structures, I also expanded my programming toolkit by learning
+                Shell Scripting and Python. Currently, I am further broadening my skill set by working with HTML, CSS,
+                and JavaScript to develop modern web interfaces.<br>
+                <img src="aboutImages/WhereamInow.jpeg"
+                    alt="Present" class="aboutImages">
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-section scroll-animate">
+
+        <h2 class="timeline-title">My Learning Timeline</h2>
+        <img src="images/pfp.jpg" alt="Profile" class="authenticateStudent">
+
+        <div class="timeline">
+
+            <input type="radio" name="timeline" id="t1" checked>
+            <input type="radio" name="timeline" id="t2">
+            <input type="radio" name="timeline" id="t3">
+            <input type="radio" name="timeline" id="t4">
+            <input type="radio" name="timeline" id="t5">
+
+            <div class="timeline-line"></div>
+
+            <div class="timeline-points">
+                <label for="t1" class="circle">
+                    <span class="circle-label">Aug-Sep 2025</span>
+                </label>
+                <label for="t2" class="circle">
+                    <span class="circle-label">Sep-Nov 2025</span>
+                </label>
+                <label for="t3" class="circle">
+                    <span class="circle-label">Dec 2025</span>
+                </label>
+                <label for="t4" class="circle">
+                    <span class="circle-label">Jan-Feb 2026</span>
+                </label>
+                <label for="t5" class="circle">
+                    <span class="circle-label">Mar 2026</span>
+                </label>
+            </div>
+
+            <div class="timeline-content">
+                <div class="content c1">
+                    <h3>August - September 2025</h3>
+                    <p>During this period I focused on building a strong foundation in programming.
+                        I learned the fundamentals of problem solving, control flow, functions, and
+                        memory concepts using C. This stage helped me develop the discipline of
+                        thinking algorithmically and writing structured, readable code.</p>
+                </div>
+                <div class="content c2">
+                    <h3>September - November 2025</h3>
+                    <p>I began studying core data structures including arrays and linked lists,
+                        along with introductory dynamic programming techniques. This phase
+                        strengthened my understanding of time complexity and efficient data
+                        organization, allowing me to approach larger algorithmic problems
+                        systematically.</p>
+                </div>
+                <div class="content c3">
+                    <h3>December 2025</h3>
+                    <p>I applied my learning through projects such as a command-line backend
+                        simulation of a music streaming system and an implementation of the
+                        strategy board game TwixT. These projects helped me understand how
+                        data structures, algorithms, and modular code design work together in
+                        practical software systems.</p>
+                </div>
+                <div class="content c4">
+                    <h3>January - February 2026</h3>
+                    <p>I expanded my knowledge to more advanced data structures including
+                        binary trees, binary search trees, heaps, and hashing techniques.
+                        Alongside this, I explored scripting tools such as Bash and Python,
+                        which introduced me to automation and systems-level programming.</p>
+                </div>
+                <div class="content c5">
+                    <h3>March 2026</h3>
+                    <p>I built a web-based task planner using Flask and SQLite, marking my
+                        first full-stack web development project. This experience helped me
+                        understand backend routing, database interactions, and how web
+                        applications integrate frontend interfaces with server-side logic.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="scrollObserver.js"></script>
+</body>
+
+</html>
