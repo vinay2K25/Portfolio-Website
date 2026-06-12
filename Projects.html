@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025101145</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="PersonalStyle.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navigationBar">
+            <a href="Home.html" class="navigationItems">Home</a>
+            <a href="About.html" class="navigationItems">About</a>
+            <a href="Projects.html" class="navigationItems">Projects</a>
+            <a href="Contact.html" class="navigationItems">Contact</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙 Dark</button>
+        </nav>
+    </header>
+
+    <div class="projectHeading">
+        <h1>My Projects</h1>
+    </div>
+
+    <div class="filter-bar" role="group" aria-label="Filter projects by technology">
+        <button class="filter-tag active" data-tag="all">All</button>
+        <button class="filter-tag" data-tag="c">C</button>
+        <button class="filter-tag" data-tag="c++">C++</button>
+        <button class="filter-tag" data-tag="data-structures">Data Structures</button>
+        <button class="filter-tag" data-tag="algorithms">Algorithms</button>
+        <button class="filter-tag" data-tag="flask">Flask</button>
+        <button class="filter-tag" data-tag="sqlite">SQLite</button>
+        <button class="filter-tag" data-tag="python">Python</button>
+        <button class="filter-tag" data-tag="web">Web</button>
+    </div>
+
+    <p class="no-results-msg" id="noResultsMsg" aria-live="polite">
+        No projects match the selected filters.
+    </p>
+
+    <div class="projectsByMe">
+
+        <div class="project-entry" data-tags="c,data-structures,algorithms">
+
+            <div class="project-entry-header">
+                <a class="aboutNumbering"><b>01</b></a>
+                <p class="projectTitle">Backend for Spotify</p>
+            </div>
+
+            <div class="project-tags" role="group" aria-label="Technologies used">
+                <span class="project-tag-label">C</span>
+                <span class="project-tag-label">Data Structures</span>
+                <span class="project-tag-label">Algorithms</span>
+            </div>
+
+            <div class="imagesOfProjects">
+                <img src="projectImages/UnpluggedWelcomeScreen.png" alt="Welcome to Spotify" class="theImages">
+                <img src="projectImages/UnpluggedPlaylist.png" alt="Spotify Playlist" class="theImages">
+                <img src="projectImages/UnpluggedCode.png" alt="Spotify Code" class="theImages">
+            </div>
+
+            <div class="eachProject">
+                <div class="projectRequirements">
+                    What does it do?
+                    <p class="aboutTheProject">This project is a command-line backend simulation of a music streaming
+                        player. It allows users to create playlists, manage songs, maintain a playback queue, and
+                        control playback using commands such as play, pause, next, and previous. The system persists
+                        playlists to disk so they can be reloaded across sessions.</p>
+                    <p class="aboutTheProject">Internally, the application uses linked data structures to represent
+                        playlists, songs, and queues, allowing efficient insertion, deletion, and traversal
+                        operations.</p>
+                </div>
+                <div class="projectRequirements">
+                    Why I built it?
+                    <p class="aboutTheProject">This project was built to apply core data structure concepts in a practical setting. By implementing playlists, queues, and playback controls using linked lists, I explored dynamic memory management and traversal beyond theory.
+
+                    It also served as a way to simulate the backend logic of a music player, including command-driven interaction and file-based persistence across sessions.
+                    </p>
+                </div>
+                <div class="projectRequirements">
+                    How would I do it differently now?
+                    <p class="aboutTheProject">If I were rebuilding the project today, I would focus on improving the
+                        architecture and separation of concerns. For example, I would introduce clearer abstractions for
+                        playlist management, playback state, and storage. I would also implement better memory safety
+                        checks, stronger input validation, and possibly convert the storage format to something
+                        structured such as JSON rather than a custom text format.</p>
+                </div>
+                <div class="projectRequirements">
+                    Trade-offs
+                    <p class="aboutTheProject">The design favors simplicity over scalability. Linked lists make insertions and deletions efficient, but searching remains linear and less optimal for large datasets.
+
+                    The use of a command-line interface and plain-text storage keeps the system easy to implement, but limits user experience and robustness compared to structured storage and more advanced architectures.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-entry" data-tags="c,algorithms,data-structures">
+
+            <div class="project-entry-header">
+                <a class="aboutNumbering"><b>02</b></a>
+                <p class="projectTitle">TwixT Game</p>
+            </div>
+
+            <div class="project-tags" role="group" aria-label="Technologies used">
+                <span class="project-tag-label">C</span>
+                <span class="project-tag-label">Algorithms</span>
+                <span class="project-tag-label">Data Structures</span>
+            </div>
+
+            <div class="imagesOfProjects">
+                <img src="projectImages/TwixTWelcomeScreen.png" alt="Welcome to TwixT" class="theImages">
+                <img src="projectImages/TwixTRedMoves.png" alt="TwixT Board" class="theImages">
+                <img src="projectImages/TwixTCode.png" alt="TwixT Code" class="theImages">
+            </div>
+
+            <div class="eachProject">
+                <div class="projectRequirements">
+                    What does it do?
+                    <p class="aboutTheProject">This project is a command-line implementation of the strategy board game
+                        TwixT, written in C. The program allows two players to take turns placing pegs on a 24×24 board
+                        and automatically creates valid links between pegs using the game's knight-move rule. The system
+                        enforces game constraints such as preventing illegal placements and detecting link intersections.
+                        A depth-first search based path-checking mechanism determines whether a player has successfully
+                        connected their sides of the board to win the game.</p>
+                </div>
+                <div class="projectRequirements">
+                    Why I built it?
+                    <p class="aboutTheProject">I built this project to explore how graph traversal and geometric
+                        constraints can be applied to real game mechanics. TwixT is an interesting problem because it
+                        combines board representation, intersection detection, and path-finding. Implementing it from
+                        scratch allowed me to practice structuring a multi-file C project, managing game state, and
+                        designing algorithms that enforce the rules of a non-trivial strategy game.</p>
+                </div>
+                <div class="projectRequirements">
+                    How would I do it differently now?
+                    <p class="aboutTheProject">If I were rebuilding the project today, I would improve the architecture
+                        and modularity of the system. For example, I would separate the game logic, board
+                        representation, and input/output layers more clearly. I would also introduce better abstractions
+                        for links and graph traversal, possibly representing the board as an explicit graph structure
+                        rather than relying on coordinate arrays. Additionally, I would add a graphical interface or
+                        web-based visualization to make the game easier to interact with.</p>
+                </div>
+                <div class="projectRequirements">
+                    Trade-offs
+                    <p class="aboutTheProject">While building the project, I prioritized simplicity and clarity of the
+                        game logic over extensibility. As a result, some structures such as global link storage and
+                        fixed-size arrays make the implementation straightforward but less flexible. The command-line
+                        interface also simplified development but limits usability compared to a graphical interface.
+                        These trade-offs allowed the core mechanics — link creation, intersection checking, and win
+                        detection — to be implemented efficiently within a manageable codebase.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-entry" data-tags="flask,sqlite,python,web">
+
+            <div class="project-entry-header">
+                <a class="aboutNumbering"><b>03</b></a>
+                <p class="projectTitle">Task Planner</p>
+            </div>
+
+            <div class="project-tags" role="group" aria-label="Technologies used">
+                <span class="project-tag-label">Flask</span>
+                <span class="project-tag-label">SQLite</span>
+                <span class="project-tag-label">Python</span>
+                <span class="project-tag-label">Web</span>
+            </div>
+
+            <div class="imagesOfProjects">
+                <img src="projectImages/TaskPlannerRunningtheProgram.png" alt="Task Planner Execution" class="theImages">
+                <img src="projectImages/TaskPlannerTheWebsite.png" alt="Welcome to Task Planner" class="theImages">
+                <img src="projectImages/TaskPlannerCode.png" alt="Task Planner Code" class="theImages">
+            </div>
+
+            <div class="eachProject">
+                <div class="projectRequirements">
+                    What does it do?
+                    <p class="aboutTheProject">This project is a lightweight web-based task manager built using Flask
+                        and SQLite. It allows users to add, complete, and delete tasks through a simple interface. Tasks
+                        are stored persistently in a SQLite database, enabling users to maintain their task list across
+                        sessions. The application demonstrates basic CRUD operations through REST-style routes and
+                        dynamically renders tasks using a template-based frontend.</p>
+                </div>
+                <div class="projectRequirements">
+                    Why I built it?
+                    <p class="aboutTheProject">I built this project to understand the fundamentals of backend web
+                        development. It helped me learn how web servers handle routes, how databases integrate with
+                        applications, and how data flows between the frontend and backend. The project also served as a
+                        practical introduction to Flask and database-driven web applications.</p>
+                </div>
+                <div class="projectRequirements">
+                    How would I do it differently now?
+                    <p class="aboutTheProject">If I were rebuilding this project today, I would structure it using a
+                        clearer separation between the backend logic, database layer, and frontend templates. I would
+                        also add features such as task editing, categories, authentication, and asynchronous updates
+                        using JavaScript or an API-driven approach. Additionally, I would likely use an ORM like
+                        SQLAlchemy for safer and more scalable database interactions.</p>
+                </div>
+                <div class="projectRequirements">
+                    Trade-offs
+                    <p class="aboutTheProject">During development, I focused on keeping the project simple and easy to
+                        understand. As a result, the application directly interacts with the database in each route
+                        instead of using an abstraction layer. While this approach reduces complexity for a small
+                        project, it can make scaling and maintenance more difficult as the application grows. The
+                        minimal interface also prioritizes functionality over advanced user experience features.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="projectFilter.js"></script>
+    <script src="scrollObserver.js"></script>
+</body>
+
+</html>
