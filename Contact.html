@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025101145</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="PersonalStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navigationBar">
+            <a href="Home.html" class="navigationItems">Home</a>
+            <a href="About.html" class="navigationItems">About</a>
+            <a href="Projects.html" class="navigationItems">Projects</a>
+            <a href="Contact.html" class="navigationItems">Contact</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙 Dark</button>
+        </nav>
+    </header>
+
+    <div class="contactMe">
+        <h1 id="contactHeading">Contact</h1>
+    </div>
+
+    <p class="contactMeText">Get in touch with me via social media or send me an email!</p>
+
+    <p class="contactMeHeadings">Social Handles</p>
+    <div class="social">
+        <a href="https://github.com/iiithvinay2025" class="socialHandles"><i class="fa-brands fa-github icons"></i><br>GitHub</a>
+        <a href="https://www.linkedin.com/in/vinay-das-675aab300/" class="socialHandles"><i class="fa-brands fa-linkedin icons"></i><br>Linked-In</a>
+        <a href="https://www.instagram.com/not_real_flixx/" class="socialHandles"><i class="fa-brands fa-instagram icons"></i><br>Instagram</a>
+        <a href="https://x.com/not_real_flixx" class="socialHandles"><i class="fa-brands fa-x-twitter icons"></i><br>Twitter/X</a>
+    </div>
+
+    <p class="contactMeHeadings">Send me an Email</p>
+    <div class="sendEmail">
+        <div class="left-form">
+            <label for="senderName">Name</label>
+            <input type="text" class="userCredentials" id="senderName" autocomplete="name">
+
+            <label for="senderEmail" style="margin-top: 16px;">Email</label>
+            <input type="email" class="userCredentials" id="senderEmail" autocomplete="email">
+        </div>
+        <div class="right-form">
+            <label for="senderMessage">Message</label>
+            <textarea class="userMessage" id="senderMessage"></textarea>
+        </div>
+    </div>
+
+    <div class="sendButton">
+        <input type="button" value="Send" class="buttonContent" id="sendButton">
+    </div>
+
+    <div id="successCard" class="successCard" role="alert" aria-live="polite">
+        <div class="successIcon">✓</div>
+        <h2>Message Sent!</h2>
+        <p>Thank you for reaching out. I will get back to you soon.</p>
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
